@@ -1,8 +1,8 @@
-# BrébeufHx - Site web
+# CRC Brébeuf - Site web
 
 ## À propos
 
-Ceci est le site web officiel de **BrébeufHx**, le plus grand hackathon pré-universitaire bilingue du Canada. Pour contribuer, veuillez lire la section [Contribuer](#-contribuer) et suivre les instructions.
+Ceci est le site web officiel de l'équipe **CRC Brébeuf**, l'équipe. Pour contribuer, veuillez lire la section [Contribuer](#-contribuer) et suivre les instructions.
 
 ### Technologies utilisées / le stack technique
 - **CSS** et **Tailwind CSS** pour le styling
@@ -19,8 +19,8 @@ Ceci est le site web officiel de **BrébeufHx**, le plus grand hackathon pré-un
 
 1. **Cloner le repository**
    ```bash
-   git clone https://github.com/adntaha/brebeufhx-site.git
-   cd brebeufhx-site
+   git clone https://github.com/CRC-Brebeuf/site-web.git
+   cd site-web
    ```
 
 2. **Installer les dépendances** (si applicable)
@@ -54,4 +54,4 @@ Ce projet est sous la licence **MIT**. Voir le fichier `LICENSE` pour plus de d�
 
 ## Questions?
 
-Contactez-nous à l'adresse suivante : team@brebeufhackathon.com
+Contactez-nous à l'adresse suivante : team@crcbrebeuf.ca
