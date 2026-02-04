@@ -1,14 +1,14 @@
 {
-  "name": "brebeufhx-site",
+  "name": "site-web",
   "version": "1.0.0",
-  "description": "Ceci est le site web officiel de **BrébeufHx**, le plus grand hackathon pré-universitaire du Québec. Pour contribuer, veuillez lire la section [Contribuer](#-contribuer) et suivre les instructions.",
-  "homepage": "https://github.com/adntaha/brebeufhx-site#readme",
+  "description": "Ceci est le site web officiel de **Brébotics**, l'équipe collégiale de robotique du Collège Jean-de-Brébeuf. Pour contribuer, veuillez lire la section [Contribuer](#-contribuer) et suivre les instructions.",
+  "homepage": "https://github.com/CRC-Brebeuf/site-web#readme",
   "bugs": {
-    "url": "https://github.com/adntaha/brebeufhx-site/issues"
+    "url": "https://github.com/CRC-Brebeuf/site-web/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adntaha/brebeufhx-site.git"
+    "url": "git+https://github.com/CRC-Brebeuf/site-web.git"
   },
   "license": "MIT",
   "author": {
