@@ -27,8 +27,8 @@
                     <li><a href="#team" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Team" data-fr="Équipe" aria-label="Navigate to team section">Team</a></li>
                     <li><a href="#robot" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Robot" data-fr="Robot" aria-label="Navigate to robot section">Robot</a></li>
                     <li><a href="#kiosk" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Kiosk" data-fr="Kiosque" aria-label="Navigate to kiosk section" onclick="alert(window.lang == 'en' ? 'Coming soon!' : 'À venir 👀')">Kiosk</a></li>
-                    <li><a href="#movie" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Movie" data-fr="Film" aria-label="Navigate to movie section" onclick="alert(window.lang == 'en' ? 'Coming soon!' : 'À venir 👀')">Movie</a></li>
-                    <li><a href="#tutorial" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Tutorial" data-fr="Tutoriel" aria-label="Navigate to tutorial section" onclick="alert(window.lang == 'en' ? 'Coming soon!' : 'À venir 👀')">Tutorial</a></li>
+                    <li><a href="#movie" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Movie" data-fr="Film" aria-label="Navigate to movie section">Movie</a></li>
+                    <li><a href="#tutorial" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Tutorial" data-fr="Tutoriel" aria-label="Navigate to tutorial section">Tutorial</a></li>
                     <!-- Don't forget to update the footer! -->
                 </ul>
                 <button id="lang-btn" class="px-4 py-2 ml-8 text-sm font-semibold bg-white rounded-lg transition-all text-green-500" data-fr="🇺🇸" data-en="🇫🇷">🇺🇸</button>
@@ -99,14 +99,58 @@
         </section>
 
         <!-- Team Section -->
-        <section id="team" class="overflow-hidden relative py-6 bg-green-600">
+        <section id="team" class="overflow-hidden relative py-20 bg-green-600">
             <div class="relative z-20 px-5 mx-auto max-w-6xl text-white">
                 <h2 class="my-8 text-5xl font-extrabold text-center animate-scroll text-white" data-en="The Team..." data-fr="L'équipe...">The Team</h2>
                 <p class="mx-auto mb-16 max-w-2xl text-xl text-center opacity-90 animate-scroll" data-en="that makes us whole!" data-fr="qui nous compose!">Every bolt, joint and character counts!</p>
-                
                 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                     <team-member-card name="Adnan Aidan Taha" image="assets/team/taha.jpg" role-fr="logiciel du robot, créateur du site web et soudeur amateur" role-en="robot firmware, website maker and amateur solderer" />
                 </div>
+            </div>
+            <div class="absolute right-0 bottom-0 left-0 h-16 bg-white" style="clip-path: polygon(0 100%, 100% 0, 100% 100%)"></div>
+        </section>
+
+        <!-- Movie Section -->
+        <section id="movie" class="overflow-hidden relative py-20 bg-white">
+            <div class="relative z-10 px-5 mx-auto max-w-4xl">
+                <h2 class="my-8 text-5xl font-extrabold text-center text-gray-900 animate-scroll" data-en="Our Movie" data-fr="Notre Film">Our Movie</h2>
+                <div class="relative w-full aspect-video rounded-lg overflow-hidden shadow-2xl mb-8">
+                    <iframe 
+                        class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="Brebotics Movie" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" 
+                        allowfullscreen
+                        autoplay>
+                    </iframe>
+                </div>
+                <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto" data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." data-fr="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+            </div>
+            <div class="absolute right-0 bottom-0 left-0 h-16 bg-green-600" style="clip-path: polygon(0 100%, 100% 0, 100% 100%)"></div>
+        </section>
+
+        <!-- Tutorial Section -->
+        <section id="tutorial" class="overflow-hidden relative py-20 bg-green-600">
+            <div class="relative z-10 px-5 mx-auto max-w-4xl text-white">
+                <h2 class="my-8 text-5xl font-extrabold text-center animate-scroll" data-en="Our Tutorial" data-fr="Notre Tutoriel">Our Tutorial</h2>
+                
+                <div class="relative w-full aspect-video rounded-lg overflow-hidden shadow-2xl mb-8">
+                    <iframe 
+                        class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="Brebotics Tutorial" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <p class="text-lg text-white opacity-90 text-center max-w-3xl mx-auto" data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." data-fr="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
             </div>
         </section>
 
