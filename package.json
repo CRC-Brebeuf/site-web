@@ -1,7 +1,7 @@
 {
   "name": "site-web",
   "version": "1.0.0",
-  "description": "Ceci est le site web officiel de **Brébotics**, l'équipe collégiale de robotique du Collège Jean-de-Brébeuf. Pour contribuer, veuillez lire la section [Contribuer](#-contribuer) et suivre les instructions.",
+  "description": "Ceci est le site web officiel de **Brébot**, l'équipe collégiale de robotique du Collège Jean-de-Brébeuf. Pour contribuer, veuillez lire la section [Contribuer](#-contribuer) et suivre les instructions.",
   "homepage": "https://github.com/CRC-Brebeuf/site-web#readme",
   "bugs": {
     "url": "https://github.com/CRC-Brebeuf/site-web/issues"
