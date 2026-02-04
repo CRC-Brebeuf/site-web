@@ -10,6 +10,9 @@
         <!-- <link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64 72x72 96x96 128x128" href="./assets/favicon.ico" type="image/x-icon" /> -->
         <meta name="og:title" content="Brébot @ CRC 2026" />
         <meta name="og:description" content="Brébot is Brébeuf Collège's robotics team, organized for the first time ever this year, backed by every fund in our community and ready to rumble." />
+        
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
 
         <link rel="preloadmodule" href="components/BaseComponent.js" as="script" type="text/javascript" />
 
@@ -19,7 +22,8 @@
         <!-- Navbar -->
         <nav id="navbar" class="fixed top-0 z-50 py-4 w-full transition-all duration-300">
             <div class="flex justify-between items-center px-5 mx-auto max-w-6xl">
-                <div id="team-name" class="text-2xl font-extrabold text-white">
+                <div id="team-name" class="flex justify-center items-center text-2xl font-extrabold text-white">
+                    <img src="assets/favicon.ico" class="w-8 h-8 mr-3">
                     <span id="breb" class="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-600">Bré</span>bot
                 </div>
                 <ul id="nav-menu" class="hidden space-x-8 md:flex">
@@ -103,7 +107,7 @@
                 <h2 class="my-8 text-5xl font-extrabold text-center animate-scroll text-white" data-en="The Team..." data-fr="L'équipe...">The Team</h2>
                 <p class="mx-auto mb-16 max-w-2xl text-xl text-center opacity-90 animate-scroll" data-en="that makes us whole!" data-fr="qui nous compose!">Every bolt, joint and character counts!</p>
                 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                    <team-member-card name="Akira Laforest" image="assets/team/akira.jpg" role-fr="Co-chef d'équipe, monteur vidéo" role-en="Team co-leader, video editor"></team-member-card>
+                    <team-member-card name="Akira Laforest" image="assets/team/akira.jpg" role-fr="Co-chef d'équipe, monteur vidéo, pilote" role-en="Team co-leader, video editor, Pilot"></team-member-card>
                     <team-member-card name="George Rayal" image="assets/team/george.jpg" role-fr="Co-chef d'équipe" role-en="Team co-leader"></team-member-card>
                     <team-member-card name="Eric Matei Tanase" image="assets/team/eric.jpg" role-fr="Chef d'équipe" role-en="Team leader"></team-member-card>
                     <team-member-card name="Adnan Aidan Taha" image="assets/team/taha.jpg" role-fr="Logiciel du robot et créateur du site web" role-en="robot firmware and website maker"></team-member-card>
@@ -134,7 +138,7 @@
                 <div class="relative w-full aspect-video rounded-lg overflow-hidden shadow-2xl mb-8">
                     <iframe 
                         class="absolute top-0 left-0 w-full h-full"
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        src="https://www.youtube.com/embed/r0wKJ0-0aME?si=CnFZaNaHVfHQMeuQ" 
                         title="Brébot Movie" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" 
@@ -142,9 +146,6 @@
                         autoplay>
                     </iframe>
                 </div>
-                <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto" data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." data-fr="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                </p>
             </div>
             <div class="absolute right-0 bottom-0 left-0 h-16 bg-green-600" style="clip-path: polygon(0 100%, 100% 0, 100% 100%)"></div>
         </section>
@@ -157,17 +158,13 @@
                 <div class="relative w-full aspect-video rounded-lg overflow-hidden shadow-2xl mb-8">
                     <iframe 
                         class="absolute top-0 left-0 w-full h-full"
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        src="https://www.youtube.com/embed/r0wKJ0-0aME?si=CnFZaNaHVfHQMeuQ" 
                         title="Brébot Tutorial" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" 
                         allowfullscreen>
                     </iframe>
                 </div>
-                
-                <p class="text-lg text-white opacity-90 text-center max-w-3xl mx-auto" data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." data-fr="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                </p>
             </div>
         </section>
 
