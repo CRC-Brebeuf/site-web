@@ -20,14 +20,15 @@
         <nav id="navbar" class="fixed top-0 z-50 py-4 w-full transition-all duration-300">
             <div class="flex justify-between items-center px-5 mx-auto max-w-6xl">
                 <div id="team-name" class="text-2xl font-extrabold text-white">
-                    <span id="breb" class="text-transparent bg-clip-text bg-gradient-to-r from-green-100 to-green-200">Bréb</span>otics
+                    <span id="breb" class="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-600">Bréb</span>otics
                 </div>
                 <ul id="nav-menu" class="hidden space-x-8 md:flex">
-                    <li><a href="/" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Home" data-fr="Accueil" aria-label="Navigate to home page">Home</a></li>
-                    <li><a href="/team" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Team" data-fr="Équipe" aria-label="Navigate to team page">Team</a></li>
-                    <li><a href="/robot" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Robot" data-fr="Robot" aria-label="Navigate to robot page">Robot</a></li>
-                    <li><a href="#" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Kiosk" data-fr="Kiosque" aria-label="Navigate to kiosk page" onclick="alert(window.lang == 'en' ? 'Coming soon!' : 'À venir 👀')">Kiosk</a></li>
-                    <li><a href="#" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Movie" data-fr="Film" aria-label="Navigate to movie page" onclick="alert(window.lang == 'en' ? 'Coming soon!' : 'À venir 👀')">Movie</a></li>
+                    <li><a href="/" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Home" data-fr="Accueil" aria-label="Navigate to home section">Home</a></li>
+                    <li><a href="#team" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Team" data-fr="Équipe" aria-label="Navigate to team section">Team</a></li>
+                    <li><a href="#robot" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Robot" data-fr="Robot" aria-label="Navigate to robot section">Robot</a></li>
+                    <li><a href="#kiosk" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Kiosk" data-fr="Kiosque" aria-label="Navigate to kiosk section" onclick="alert(window.lang == 'en' ? 'Coming soon!' : 'À venir 👀')">Kiosk</a></li>
+                    <li><a href="#movie" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Movie" data-fr="Film" aria-label="Navigate to movie section" onclick="alert(window.lang == 'en' ? 'Coming soon!' : 'À venir 👀')">Movie</a></li>
+                    <li><a href="#tutorial" class="text-base font-medium text-gray-200 transition-colors hover:text-white" data-en="Tutorial" data-fr="Tutoriel" aria-label="Navigate to tutorial section" onclick="alert(window.lang == 'en' ? 'Coming soon!' : 'À venir 👀')">Tutorial</a></li>
                     <!-- Don't forget to update the footer! -->
                 </ul>
                 <button id="lang-btn" class="px-4 py-2 ml-8 text-sm font-semibold bg-white rounded-lg transition-all text-green-500" data-fr="🇺🇸" data-en="🇫🇷">🇺🇸</button>
@@ -40,29 +41,55 @@
         </nav>
 
         <!-- Hero Section -->
-        <section id="home" class="flex overflow-hidden relative flex-col justify-left items-left min-h-screen bg-gradient-to-br from-green-400 via-green-500 to-green-700">
-            <div class="relative z-10 px-5 py-6 m-auto max-w-4xl text-white">
+        <section id="home" class="flex overflow-hidden relative flex-col justify-right items-right min-h-screen bg-green-500 bg-[url(assets/herobg.jpg)] bg-cover bg-right">
+            <div class="absolute inset-0 bg-green-700 mix-blend-darken opacity-50"></div>
+            <div class="relative px-5 py-6 my-auto">
+            <div class=" z-10 ml-auto text-white text-right">
                 <h1 class="text-7xl font-extrabold leading-tight drop-shadow-lg md:text-8xl">Brébotics</h1>
-                <h2 class="mb-4 text-4xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white drop-shadow-lg md:text-5xl to-green-100" data-en="robotics team @ brébeuf collège" data-fr="équipe de robotique de Brébeuf">robotics team @ brébeuf collège</h2>
+                <h2 class="mb-2 pb-2 text-4xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white drop-shadow-lg md:text-5xl to-green-100" data-en="robotics team @ brébeuf college" data-fr="équipe de robotique @ collège jean-de-brébeuf">robotics team @ brébeuf collège</h2>
                 <p class="mb-8 text-xl opacity-90 drop-shadow-md" data-en="it's our first year at CRC and we're going to learn, perform, and most importantly, have fun" data-fr="c'est notre première année à la competition CRC et on va performer, apprendre, et plus que tout, s'amuser">
-                     it's our first year at CRC and we're going to learn, perform, and most importantly, have fun
+                    it's our first year at CRC and we're going to learn, perform, and most importantly, have fun
                 </p>
-                <div class="flex flex-col gap-4 sm:flex-row">
-                    <a href="#about" class="flex justify-center items-center px-8 py-3 text-lg font-semibold bg-gradient-to-r from-white rounded-full shadow-lg transition-all transform to-green-100 text-green-700 hover:shadow-xl hover:-translate-y-1" data-en="About" data-fr="À propos">About</a>
-                    <a href="#team" class="flex justify-center items-center px-8 py-3 text-lg font-semibold bg-transparent rounded-full border-2 border-white transition-all transform text-white hover:shadow-xl hover:-translate-y-1" data-en="Our team" data-fr="Notre équipe">Our team</a>
+                <div class="relative mr-24 -mb-12">
+                    <div class="overflow-hidden rounded-lg mr-4 inline-block">
+                        <a href="#about" class="relative group px-12 py-4 text-xl font-bold border-4 border-white rounded-lg block">
+                            <div class="absolute inset-0 bg-white origin-left transition-transform duration-200 ease-out scale-x-0 skew-x-[-15deg] group-hover:scale-x-[1.2] -left-[10%]"></div>
+                            <span class="relative z-10 transition-colors duration-200 group-hover:text-black text-white uppercase" data-en="About" data-fr="À propos">
+                                About
+                            </span>
+                        </a>
+                    </div>
+                    <div class="overflow-hidden rounded-lg inline-block">
+                        <a href="#team" class="relative group px-12 py-4 text-xl font-bold border-4 border-white rounded-lg block">
+                            <div class="absolute inset-0 bg-white origin-left transition-transform duration-200 ease-out scale-x-0 skew-x-[-15deg] group-hover:scale-x-[1.2] -left-[10%]"></div>
+                            <span class="relative z-10 transition-colors duration-200 group-hover:text-black text-white uppercase" data-en="Our team" data-fr="Notre équipe">
+                                Our team
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="overflow-hidden relative py-20 bg-white">
-            <div class="absolute right-0 top-0 left-0 h-16 bg-gradient-to-r from-green-500 to-green-700" style="clip-path: polygon(0 0, 100% 100%, 100% 0)"></div>
-            <div class="relative z-10 px-5 mx-auto max-w-lg">
-                <div class="rounded-xl bg-green-500 text-white py-2 px-6 mb-6">
-                <h1 class="text-4xl text-center my-8">About Us</h1>
-                We're Brebotics, the first ever robotics team at Brébeuf, born from passionate students that want to take our passion for Arduinos, circuits and programming even further.<br/>
-                We've split ourselves into 6 teams: comms, video, competitive programming, robot hardware, robot software, and partnerships. Together, we're making our robot, an F1-meets-cyberpunk machine which we affectionately refer to as Brebot, a reality.<br/>
-                <a href="/crc.html" class="flex justify-center items-center max-w-52 my-8 mx-auto px-8 py-3 text-lg font-semibold bg-gradient-to-r from-white rounded-full shadow-lg transition-all transform to-green-100 text-green-700 hover:shadow-xl hover:-translate-y-1" data-en="The Competition" data-fr="La compétition">The Competition</a>
+            <div class="absolute right-0 top-0 left-0 h-16 bg-gradient-to-r from-green-800 to-gray-700" style="clip-path: polygon(0 0, 100% 100%, 100% 0)"></div>
+            <div class="relative z-10 px-20 mx-auto max-w-xl">
+                <div class="relative text-white py-2 px-6 mb-6">
+                    <div class="absolute -z-10 inset-0 bg-green-500 skew-x-[5deg]"></div>
+                    <h1 class="text-4xl text-center my-8 font-extrabold" data-fr="À propos de nous" data-en="About Us">About Us</h1>
+                    We're Brebotics, the first ever robotics team at Brébeuf, born from passionate students that want to take our passion for Arduinos, circuits and programming even further.<br/>
+                    We've split ourselves into 6 teams: comms, video, competitive programming, robot hardware, robot software, and partnerships. Together, we're making our robot, an F1-meets-cyberpunk machine which we affectionately refer to as Brebot, a reality.<br/>
+                    <div class="my-8 flex justify-center items-center">
+                    <div class="overflow-hidden rounded-lg inline-block">
+                        <a href="/crc.html" class="relative group px-8 py-3 text-xl font-bold border-4 border-white rounded-lg block">
+                            <div class="absolute inset-0 bg-white origin-left transition-transform duration-200 ease-out scale-x-0 skew-x-[-15deg] group-hover:scale-x-[1.2] -left-[10%]"></div>
+                            <span class="relative z-10 transition-colors duration-200 group-hover:text-black text-white uppercase" data-en="The Competition" data-fr="La compétition">
+                                The Competition
+                            </span>
+                        </a>
+                    </div></div>
+                    <!-- <a href="/crc.html" class="flex justify-center items-center  px-8 py-3 text-lg font-semibold bg-gradient-to-r from-white rounded-full shadow-lg transition-all transform to-green-100 text-green-700 hover:shadow-xl hover:-translate-y-1" data-en="The Competition" data-fr="La compétition">The Competition</a> -->
                 </div>
                 We're supported by the Physics department at Brébeuf, our Mathematics & Computer Science department and our student association. If you're from industry and would like to partner with us, contact us via <span class="text-green-700">team [at] crcbrebeuf.ca</span>.
             </div>
@@ -89,34 +116,31 @@
         <footer class="py-16 text-white bg-gray-900">
             <div class="grid gap-8 px-5 mx-auto mb-4 max-w-6xl md:grid-cols-3">
                 <div>
-                    <h3 class="mb-4 text-2xl font-bold text-green-400">❄️ BrébeufHx</h3>
-                    <p class="text-gray-400" data-en="Our 9th annual pre-university hackathon. Organized with ❤️ for Québec's future innovators." data-fr="Le 9e hackathon pré-universitaire annuel. Organisé avec ❤️ pour les futurs innovateurs du Québec.">The 9th annual pre-university hackathon. Organized with ❤️ for Québec's future innovators.</p>
-                    <p class="mt-2 text-gray-400" data-en="Contact us at <a class=hover:underline href=mailto:team@brebeufhackathon.com>team@brebeufhackathon.com</a> for any questions or inquiries." data-fr="Contacte-nous à l'adresse <a class=hover:underline href=mailto:team@brebeufhackathon.com>team@brebeufhackathon.com</a> pour toute question.">Contact us at <a class="hover:underline" href="mailto:team@brebeufhackathon.com">team [at] brebeufhackathon [dot] com</a> for any questions or inquiries.</p>
+                    <h3 class="mb-4 text-2xl font-bold text-green-400">🤖 Brebotics</h3>
+                    <p class="text-gray-400" data-en="Brébeuf Collège's first collegiate robotics team. Building the future, one solder joint at a time." data-fr="La première équipe de robotique collégiale du Collège Jean-de-Brébeuf. Construire l'avenir, une vis à la fois.">Brébeuf Collège's first collegiate robotics team. Building the future, one solder joint at a time.</p>
+                    <p class="mt-2 text-gray-400" data-en="Contact us at <a class='hover:underline' href='mailto:team@crcbrebeuf.ca'>team [at] crcbrebeuf [dot] ca</a> for any questions or partnership inquiries." data-fr="Contactez-nous à <a class='hover:underline' href='mailto:team@crcbrebeuf.ca'>team [at] crcbrebeuf [point] ca</a> pour toute question ou partenariat.">Contact us at <a class="hover:underline" href="mailto:team@crcbrebeuf.ca">team [at] crcbrebeuf [dot] ca</a> for any questions or partnership inquiries.</p>
                 </div>
                 <div>
                     <h4 class="mb-4 text-xl font-semibold text-green-400" data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4> 
                     <ul class="space-y-2">
-                        <li><a href="/" class="text-gray-400 transition-colors hover:text-green-400" data-en="Home" data-fr="Accueil" aria-label="Navigate to home page">Home</a></li>
-                        <li><a href="/team" class="text-gray-400 transition-colors hover:text-green-400" data-en="Team" data-fr="Équipe" aria-label="Navigate to team page">Team</a></li>
-                        <li><a href="/sponsors" class="text-gray-400 transition-colors hover:text-green-400" data-en="Sponsors" data-fr="Partenaires" aria-label="Navigate to sponsors page">Sponsors</a></li>
-                        <li><a href="register.html" class="text-gray-400 transition-colors hover:text-green-400" data-en="Register" data-fr="S'inscrire" aria-label="Open sign up page">Register</a></li>
+                        <li><a href="/" class="text-gray-400 transition-colors hover:text-green-400" data-en="Home" data-fr="Accueil" aria-label="Navigate to home section">Home</a></li>
+                        <li><a href="#team" class="text-gray-400 transition-colors hover:text-green-400" data-en="Team" data-fr="Équipe" aria-label="Navigate to team section">Team</a></li>
+                        <li><a href="#robot" class="text-gray-400 transition-colors hover:text-green-400" data-en="Robot" data-fr="Robot" aria-label="Navigate to robot section">Robot</a></li>
+                        <li><a href="#kiosk" class="text-gray-400 transition-colors hover:text-green-400" data-en="Kiosk" data-fr="Kiosque" aria-label="Navigate to kiosk section">Kiosk</a></li>
+                        <li><a href="/crc.html" class="text-gray-400 transition-colors hover:text-green-400" data-en="Competition" data-fr="Compétition" aria-label="Navigate to competition page">Competition</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="mb-4 text-xl font-semibold text-green-400" data-en="Connect" data-fr="Réseaux sociaux">Connect</h4>
                     <div class="flex space-x-4">
-                        <!-- Bootstrap Icons -->
-                        <a href="https://www.instagram.com/crc.brebeuf" aria-label="Instagram page" class="w-10 h-10 bg-gray-800 rounded-full transition-all transform hover:bg-green-500 hover:-translate-y-1 overflow-hidden">
-                            Follow us on Instagram <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="m-[9px] w-8 h-8 text-white">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/crc.brebeuf" aria-label="Instagram page" class="w-10 h-10 bg-gray-800 rounded-full transition-all transform hover:bg-green-500 hover:-translate-y-1 overflow-hidden flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="w-5 h-5 text-white">
                                 <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
                             </svg>
                         </a>
-                        <!-- <a href="#" aria-label="LinkedIn page" class="w-10 h-10 bg-gray-800 rounded-full transition-all transform hover:bg-green-500 hover:-translate-y-1 overflow-hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="m-[9px] w-8 h-8 text-white">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                            </svg>
-                        </a> -->
                     </div>
+                    <p class="mt-4 text-sm text-gray-500" data-en="Made by Brébotics in 2026 with 🔧. This code is MIT licensed." data-fr="Fait par Brébotics en 2026 avec des 🔧. Ce code est disponible sous la license MIT.">Made by Brébotics in 2026 with 🔧. This code is MIT licensed.</p>
                 </div>
             </div>
         </footer>
